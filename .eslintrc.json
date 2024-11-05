@@ -3,6 +3,6 @@
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint"],
   "rules": {
-    // adicione suas regras personalizadas aqui, se necessário
+    "react/no-unescaped-entities": "off"
   }
 }
