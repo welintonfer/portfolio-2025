@@ -189,7 +189,7 @@ export default function Page() {
               autoPlay
               muted
               loop
-              alt="3D Modeling and Rendering"
+              // alt="3D Modeling and Rendering"
             ></video>
 
             <div className="max-w-3xl mx-auto">
