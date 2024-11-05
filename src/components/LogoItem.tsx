@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function LogoItem({ src, alt }: { src: StaticImageData | string; alt: string }) {
+function LogoItem({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="flex justify-center items-center flex-grow max-w-[20%]">
       <Image
