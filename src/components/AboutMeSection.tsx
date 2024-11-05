@@ -43,13 +43,15 @@ export default function AboutMeSection() {
             {/* Coluna de Texto */}
             <div className="flex-1">
               <h2 className="h3 h3__400 text-center lg:text-left">
-                Hey, I'm Wellington, and I take a <em>holistic</em> approach to <em>design</em>.
+              Hey, I'm Wellington, and I <em>design experiences</em> that <em>capture attention</em> and inspire curiosity.
               </h2>
               <p className="mt-8 max-w-6xl text-xl text-center lg:text-left">
-                Blending UX fundamentals with deep expertise in Product Marketing, Digital Analysis,
-                Market Research, and Brand Management, I move beyond traditional methods. This
-                transdisciplinary mindset allows me to create innovative, user-centered solutions
-                that align business goals with meaningful user experiences.
+                
+
+                With a holistic approach to design, I combine core <strong>UX principles</strong> with deep expertise in <strong>Product Marketing</strong>,
+                <strong>Digital Analysis</strong>, <strong>Market Research</strong>, and <strong>Brand Management</strong>. This transdisciplinary mindset enables me to create
+                engaging, user-centered solutions that align business goals with meaningful user experiences. Just as my 3D cat
+                keeps its eyes on the floating ball, I <strong>design journeys</strong> that keep users engaged, curious, and focused every step of the way.
               </p>
 
               {/* Ícones e Descrições */}
