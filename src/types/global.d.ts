@@ -50,3 +50,14 @@ type StaticImageData = {
   width: number;
   blurDataURL?: string;
 };
+
+// Declaração global para gtag no window
+declare global {
+  interface Window {
+    gtag: (
+      command: 'config' | 'event',
+      targetId: string,
+      config?: Record<string, any>
+    ) => void;
+  }
+}

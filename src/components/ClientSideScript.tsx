@@ -1,16 +1,16 @@
-// src/components/ClientSideScript.tsx
 "use client";
 
 import Script from "next/script";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import * as gtag from "@/lib/gtag";
+import * as gtag from "@/lib/gtag"; // Certifique-se de que ele aponte para `gtag.ts`
+
 
 export default function ClientSideScript() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (window.gtag && pathname) {
+    if (pathname) {
       gtag.pageview(pathname);
     }
   }, [pathname]);
