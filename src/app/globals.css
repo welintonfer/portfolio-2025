@@ -36511,6 +36511,11 @@ body {
   display: none !important;
 }
 
+/* Esconde o ícone da Vercel no footer */
+[data-vercel-footer] {
+  display: none !important;
+}
+
 .single-project p {
   font-size: 1rem;
   font-style: normal;
