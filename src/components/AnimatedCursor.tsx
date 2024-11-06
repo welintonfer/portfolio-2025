@@ -1,7 +1,4 @@
-// // components/AnimatedCursor.tsx
 // "use client";
-
-
 
 // import { useRef, useEffect } from "react";
 // import gsap from "gsap";
@@ -12,6 +9,8 @@
 //   const smallBallRef = useRef<HTMLDivElement>(null);
 
 //   useEffect(() => {
+//     console.log("AnimatedCursor is running"); // Adicione aqui para verificar o funcionamento
+
 //     const bigBall = bigBallRef.current;
 //     const smallBall = smallBallRef.current;
 
@@ -38,7 +37,7 @@
 //         el.removeEventListener("mouseleave", onMouseLeave);
 //       });
 //     };
-//   }, []);
+//   }, []); // Adicione aqui, na primeira linha do useEffect, para verificar o funcionamento
 
 //   return (
 //     <div className={styles.cursor}>
@@ -52,9 +51,6 @@
 //   );
 // }
 
-
-
-// components/AnimatedCursor.tsx
 "use client";
 
 import { useRef, useEffect } from "react";
@@ -66,7 +62,10 @@ export default function AnimatedCursor() {
   const smallBallRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    console.log("AnimatedCursor is running"); // Adicione aqui para verificar o funcionamento
+    // Certifica-se de que o código é executado apenas no lado do cliente
+    if (typeof window === "undefined") return;
+
+    console.log("AnimatedCursor is running"); // Log para verificar o funcionamento
 
     const bigBall = bigBallRef.current;
     const smallBall = smallBallRef.current;
@@ -94,7 +93,7 @@ export default function AnimatedCursor() {
         el.removeEventListener("mouseleave", onMouseLeave);
       });
     };
-  }, []); // Adicione aqui, na primeira linha do useEffect, para verificar o funcionamento
+  }, []); 
 
   return (
     <div className={styles.cursor}>
