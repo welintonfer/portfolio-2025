@@ -1,64 +1,3 @@
-// "use client";
-
-// import Image from "next/image";
-
-// import { useState, useEffect, useRef } from "react";
-// import TemplateMain from "@/components/TemplateMain";
-// import ContactForm from "@/components/ContactForm";
-// import CopyRight from "@/components/CopyRight";
-// import HeaderSubpage from "@/components/HeaderSubpage";
-
-
-// import logo from "../../../assets/img/habitus/logo@2x.png";
-// import img01 from "../../../assets/img/habitus/01@2x.png";
-// import img02 from "../../../assets/img/habitus/02@2x.png";
-// import img03 from "../../../assets/img/habitus/03@2x.png";
-// import img04 from "../../../assets/img/habitus/04@2x.png";
-// import img05 from "../../../assets/img/habitus/05@2x.png";
-// import img06 from "../../../assets/img/habitus/06-registration-steps@2x.png";
-// import img07 from "../../../assets/img/habitus/07-onboarding@2x.png";
-// import img08 from "../../../assets/img/habitus/08-onboarding-example@2x.png";
-// import img09 from "../../../assets/img/habitus/09-ui-kit@2x.png";
-// import img10 from "../../../assets/img/habitus/blender-cameras-for-photos-min.png";
-// import img11 from "../../../assets/img/habitus/3d-back-isometric.png";
-// import img12 from "../../../assets/img/habitus/3d-front-isometric.png";
-// import img13 from "../../../assets/img/habitus/php-croper-img.png";
-// import img14 from "../../../assets/img/habitus/habitus-health-logo-2d@2x.png";
-
-// import video01 from "../../../assets/video/habitus-health-logo-3d.mp4";
-
-
-
-// export default function Page() {
-//   const [isDarkMode, setIsDarkMode] = useState(false);
-//   const [mounted, setMounted] = useState(false); // Adiciona um estado para verificar se o componente foi montado
-//   const contactFormRef = useRef<HTMLDivElement>(null);
-
-//   // Modo escuro, só no cliente
-//   const toggleDarkMode = () => {
-//     if (typeof window !== 'undefined') {
-//       const html = document.documentElement;
-//       html.classList.toggle("dark", !isDarkMode);
-//       setIsDarkMode(!isDarkMode);
-//     }
-//   };
-
-//   // Efeito para aplicar o tema escuro ao montar o componente no cliente
-//   useEffect(() => {
-//     if (typeof window !== 'undefined') {
-//       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-//       setIsDarkMode(prefersDark);
-//       setMounted(true); // Marca o componente como montado
-//     }
-//   }, []);
-
-//   // Função para rolar até o formulário
-//   const toggleForm = () => {
-//     if (contactFormRef.current) {
-//       contactFormRef.current.scrollIntoView({ behavior: "smooth" });
-//     }
-//   };
-
 "use client";
 
 import Image from "next/image";
@@ -83,6 +22,7 @@ import img11 from "../../../assets/img/habitus/3d-back-isometric.png";
 import img12 from "../../../assets/img/habitus/3d-front-isometric.png";
 import img13 from "../../../assets/img/habitus/php-croper-img.png";
 import img14 from "../../../assets/img/habitus/habitus-health-logo-2d@2x.png";
+// @ts-ignore
 import video01 from "../../../assets/video/habitus-health-logo-3d.mp4";
 
 export default function Page() {

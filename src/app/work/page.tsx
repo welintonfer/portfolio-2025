@@ -7,9 +7,11 @@ import CopyRight from "@/components/CopyRight";
 import HeaderSubpage from "@/components/HeaderSubpage";
 import Image, { StaticImageData } from "next/image";
 
+// @ts-ignore
 import europcarCover from "../../assets/video/animated-mockup-i-phone-14-pro.webm";
 import eirCover from "../../assets/img/eir/cover-casestudy-eir.png";
 import helenCover from "../../assets/img/helen/helen-turkington-cover.png";
+// @ts-ignore
 import habitusCover from "../../assets/video/habitushealth.webm";
 
 export default function Page() {

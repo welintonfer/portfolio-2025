@@ -20,7 +20,7 @@ import img08 from "../../../assets/img/eir/bottom-navigation.png";
 import img09 from "../../../assets/img/eir/vote-options.png";
 import img10 from "../../../assets/img/eir/streamlined-porting-flow.png";
 import img11 from "../../../assets/img/eir/material-ui-eir.png";
-
+// @ts-ignore
 import video01 from "../../../assets/video/my-eir-workshop.mp4";
 
 
