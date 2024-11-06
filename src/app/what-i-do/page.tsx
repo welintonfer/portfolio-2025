@@ -114,7 +114,7 @@ export default function Page() {
       <div className="overflow-hidden">
       <HeaderSubpage 
         titlePage="What I do"
-        descriptionProject="Hello world! With over 13 years in the UX/UI design arena, I've honed my craft in navigating complex challenges, sculpting visually stunning UI designs, conducting impactful UX research, all while dancing to the rhythm of user-centered design principles."
+        descriptionProject="Hello world! With over 14 years in the UX/UI design arena, I've honed my craft in navigating complex challenges, sculpting visually stunning UI designs, conducting impactful UX research, all while dancing to the rhythm of user-centered design principles."
         toggleDarkMode={toggleDarkMode} 
         isLightMode={!isDarkMode} 
         toggleForm={toggleForm}
