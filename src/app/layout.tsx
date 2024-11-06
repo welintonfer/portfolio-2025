@@ -1,6 +1,7 @@
 "use client";
 
 import "./globals.css"; // Certifique-se de que o caminho está correto
+import "../../styles/globals.css"; // Certifique-se de que o caminho está correto
 import type { Metadata } from "next";
 import ClientAnimatedCursor from "@/components/ClientAnimatedCursor";
 import Script from "next/script";
