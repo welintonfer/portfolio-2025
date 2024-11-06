@@ -1,184 +1,3 @@
-// "use client";
-
-// import Image from "next/image";
-
-// import { useState, useEffect, useRef } from "react";
-// import TemplateMain from "@/components/TemplateMain";
-// import ContactForm from "@/components/ContactForm";
-// import CopyRight from "@/components/CopyRight";
-// import HeaderSubpage from "@/components/HeaderSubpage";
-
-
-
-// // here
-// import briefing from "../../assets/img/what-i-do/briefing.svg";
-// import uxAldit from "../../assets/img/what-i-do/ux-audit.svg";
-// import informationArchitecturePart1 from "../../assets/img/what-i-do/information-architecture-part-1.svg";
-// import workshop from "../../assets/img/what-i-do/workshop.svg";
-// import sprint from "../../assets/img/what-i-do/sprint.svg";
-// import persona from "../../assets/img/what-i-do/persona.svg";
-// import research from "../../assets/img/what-i-do/research.svg";
-// import userJourney from "../../assets/img/what-i-do/user-journey.svg";
-// import LowFidelityDesign from "../../assets/img/what-i-do/Low-fidelity-design.svg";
-// import Wireframe from "../../assets/img/what-i-do/wireframe.svg";
-// import testingPart1 from "../../assets/img/what-i-do/testing-part-1.svg";
-// import informationArchitecturePart2 from "../../assets/img/what-i-do/information-architecture-part-2.svg";
-// import toolLab from "../../assets/img/what-i-do/tool-lab.svg";
-// import designSystem from "../../assets/img/what-i-do/design-system.svg";
-// import testingPart2 from "../../assets/img/what-i-do/testing-part-2.svg";
-// import crossBrowserTesting from "../../assets/img/what-i-do/cross-browser-testing.svg";
-// import monitoring from "../../assets/img/what-i-do/monitoring.svg";
-
-
-// export default function Page() {
-//   const [isDarkMode, setIsDarkMode] = useState(false);
-//   const [mounted, setMounted] = useState(false); // Adiciona um estado para verificar se o componente foi montado
-//   const contactFormRef = useRef<HTMLDivElement>(null);
-
-//   // Modo escuro, só no cliente
-//   const toggleDarkMode = () => {
-//     if (typeof window !== 'undefined') {
-//       const html = document.documentElement;
-//       html.classList.toggle("dark", !isDarkMode);
-//       setIsDarkMode(!isDarkMode);
-//     }
-//   };
-
-//   // Efeito para aplicar o tema escuro ao montar o componente no cliente
-//   useEffect(() => {
-//     if (typeof window !== 'undefined') {
-//       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-//       setIsDarkMode(prefersDark);
-//       setMounted(true); // Marca o componente como montado
-//     }
-//   }, []);
-
-//   // Função para rolar até o formulário
-//   const toggleForm = () => {
-//     if (contactFormRef.current) {
-//       contactFormRef.current.scrollIntoView({ behavior: "smooth" });
-//     }
-//   };
-
-//   return (
-//     <div className="overflow-hidden">
-//       <HeaderSubpage 
-//         titlePage="What I do"
-//         descriptionProject="Hello world! With over 13 years in the UX/UI design arena, I've honed my craft in navigating complex challenges, sculpting visually stunning UI designs, conducting impactful UX research, all while dancing to the rhythm of user-centered design principles."
-//         toggleDarkMode={toggleDarkMode} 
-//         isLightMode={!isDarkMode} 
-//         toggleForm={toggleForm} // Passa a função para o header
-//       />
-
-//       <TemplateMain>
-
-//           <section className="relative mt-12 flex flex-col justify-center py-12 overflow-hidden isolate bg-white border-t-4 border-b-4 border-solid border-gray-900">
-//             <div className="absolute inset-2 -z-10">
-//               <div className={`bg-1`}></div>
-//               <div className={`bg-2`}></div>
-//               <div className={`bg-3`}></div>
-//             </div>
-//             <div className="container mx-auto flex flex-col justify-center items-center">
-//               <div className="flex flex-col gap-5 md:flex-row md:items-end justify-between">
-//                 <div>
-//                   <h2 className="h3 h3__400 pb-6 text-center">01. Understanding</h2>
-//                   <p className="text-center">
-//                     Effective UX design prioritises user needs with intuitive navigation, clear messaging, and visually appealing design for a seamless experience.
-//                   </p>
-//                 </div>
-//               </div>
-//             </div>
-//            </section>
-
-
-//            <section className="relative flex flex-col justify-center py-12">
-//               <div className="w-full px-6 lg:px-8">
-//                 <div className="max-w-9xl mx-auto">
-//                   <div className="flex lg:flex-row flex-col-reverse justify-between items-center gap-8">
-//                     {/* Coluna de Texto */}
-//                     <div className="flex-1">
-//                       <h2 className="h3 h3__400 text-center lg:text-left">
-//                       Briefing
-//                       </h2>
-//                       <p className="mt-8 max-w-6xl text-xl text-center lg:text-left">
-//                         In crafting my design process, I infuse a strategic essence by immersing myself in the art of the attentive briefing. I don't just listen; I empathetically step into the client's shoes, delving into their vision amidst the dynamic market landscape. This briefing goes beyond mere notes on interface features—it's a profound dive into the intricacies
-//                       </p>
-//                     </div>
-
-//                     {/* Coluna de Iframe */}
-//                     <div className="flex-1 hidden lg:flex h-[500px]">
-//                     {/* briefing */}
-//                     <img
-//                       src={briefing.src}
-//                       alt="briefing"
-//                       className="w-full h-auto max-w-full"
-//                     />
-//                     </div>
-//                   </div>
-//                 </div>
-//               </div>
-//             </section>
-
-
-//         <section className="flex flex-col gap-4 w-full pb-8 pt-12 single-project">
-//           <article className="w-full sm:w-full md:w-full lg:max-w-5xl xl:max-w-5xl px-4 mx-auto">
-
-
-//             <div className="max-w-3xl mx-auto">
-//               {/* text here */}
-//               <h2 className="h3 h3__400 pb-6">Design Process</h2>
-//               <p>
-//                 With the five-phase Design Thinking framework from Stanford's Hasso Plattner Institute as a foundation, I refined each step of the user journey:
-//               </p>
-//               <div className="list pb-8">
-//                 <ul>
-//                   <li><p><strong>Empathise</strong>: Deeply understood user needs and pain points.</p></li>
-//                   <li><p><strong>Define</strong>: Clearly articulated challenges to address.</p></li>
-//                   <li><p><strong>Ideate</strong>: Conceptualized solutions to optimize user flow.</p></li>
-//                   <li><p><strong>Prototype</strong>: Built models to visualize ideas.</p></li>
-//                   <li><p><strong>Test</strong>: Iteratively tested and refined interactions.</p></li>
-//                 </ul>
-//               </div>
-//             </div>
-
-
-
-//             <div className="max-w-3xl mx-auto">
-//               {/* text here */}
-//               <h2 className="h3 h3__400 pb-6">Revolutionizing Eir's Onboarding Experience</h2>
-//               <p>
-//                 Onboarding is not just an introduction; it's a transformative user journey that establishes trust, empowerment, and engagement. For Eir, this was redefined as a high value entry point where users are warmly welcomed, informed, and supported. Each interaction—whether for financial services, account settings, or billing is designed to be intuitive and impactful, setting the stage for an empowering, user-centric experience.
-//               </p>
-//             </div>
-
-//             {/* <Image
-//                 src={img01}
-//                 alt={`Revolutionizing Eir's Onboarding Experience`}
-//                 className="w-full h-auto max-w-full rounded__16 my-12"
-//             /> */}
-
-
-            
-          
-//           </article>
-//         </section>
-
-//         {/* Formulário de Contato */}
-//         <div ref={contactFormRef}>
-//           <ContactForm />
-//         </div>
-
-//         <CopyRight />
-//       </TemplateMain>
-//     </div>
-//   );
-// }
-
-
-
-
-
-
 "use client";
 
 import { useState, useEffect, useRef } from "react";
@@ -187,7 +6,7 @@ import TemplateMain from "@/components/TemplateMain";
 import ContactForm from "@/components/ContactForm";
 import CopyRight from "@/components/CopyRight";
 import HeaderSubpage from "@/components/HeaderSubpage";
-
+import Head from "next/head";
 // Importa o SVG como componente usando o @svgr/webpack
 import BriefingIcon from "../../assets/img/what-i-do/briefing.svg";
 import UxAldit from "../../assets/img/what-i-do/ux-audit.svg";
@@ -255,7 +74,44 @@ export default function Page() {
   };
 
   return (
-    <div className="overflow-hidden">
+    <>
+    {/* SEO Metadata */}
+    {/* SEO Metadata */}
+    <Head>
+        <title>Wellington Alexander - UX/UI Designer & Digital Experience Specialist</title>
+        <meta 
+          name="description" 
+          content="Explore the UX/UI design portfolio of Wellington Alexander, a specialist in creating user-centered solutions with over 13 years of experience in UX research, visual design, and interface architecture." 
+        />
+        <meta 
+          name="keywords" 
+          content="Wellington Alexander, UX Design, UI Design, User Research, Information Architecture, Prototyping, User-Centered Design, Design System, Responsive Design, Usability Testing, Figma, Digital Experience" 
+        />
+        <link rel="canonical" href="https://www.creative-ton.com/what-i-do" />
+        
+        {/* Open Graph (OG) for social media */}
+        <meta property="og:title" content="Wellington Alexander - UX/UI Designer & Digital Experience Specialist" />
+        <meta 
+          property="og:description" 
+          content="Discover Wellington Alexander's UX/UI projects that combine expertise in user-centered design, information architecture, and prototyping to create impactful digital experiences." 
+        />
+        <meta 
+          property="og:image" 
+          content="../../assets/seo/seo-homepage.png" 
+        />
+        <meta property="og:url" content="https://www.creative-ton.com/what-i-do" />
+        
+        {/* Twitter Card for social sharing */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Wellington Alexander - UX/UI Designer & Digital Experience Specialist" />
+        <meta 
+          name="twitter:description" 
+          content="Explore the UX/UI portfolio of Wellington Alexander, showcasing projects rooted in user-centered principles and digital innovation." 
+        />
+        <meta name="twitter:image" content="../../assets/seo/seo-homepage.png" />
+    </Head>
+
+      <div className="overflow-hidden">
       <HeaderSubpage 
         titlePage="What I do"
         descriptionProject="Hello world! With over 13 years in the UX/UI design arena, I've honed my craft in navigating complex challenges, sculpting visually stunning UI designs, conducting impactful UX research, all while dancing to the rhythm of user-centered design principles."
@@ -766,5 +622,6 @@ export default function Page() {
         <CopyRight />
       </TemplateMain>
     </div>
+    </>
   );
 }

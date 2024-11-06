@@ -33,8 +33,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Metadados de título e descrição */}
-        <title>{metadata.title as string}</title>
-        <meta name="description" content={metadata.description as string} />
+        {/* <title>{metadata.title as string}</title>
+        <meta name="description" content={metadata.description as string} /> */}
 
         {/* Script do Google Analytics */}
         {GA_TRACKING_ID && (

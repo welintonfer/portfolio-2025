@@ -1,6 +1,7 @@
 import TeamplateHome from "@/components/TemplateHome";
 import Image from "next/image";
 
+
 export const metadata = {
   title: "Wellington Alexander - UX/UI Designer & Digital Experience Expert",
   description: "Wellington Alexander, a UX/UI Designer with over 14 years of experience. Specializing in user-centered design, UX research, and front-end development.",
@@ -22,7 +23,7 @@ export const metadata = {
     url: "https://www.creative-ton.com",
     images: [
       {
-        url: "/assets/img/portfolio-preview.png",  
+        url: "../../assets/seo/seo-homepage.png",  
         width: 1200,
         height: 630,
         alt: "Wellington Alexander - UX/UI Designer Portfolio Preview",
@@ -33,7 +34,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Wellington Alexander - UX/UI Designer & Digital Experience Expert",
     description: "Wellington Alexander, a UX/UI Designer with over 14 years of experience in user-centered design, UX research, and front-end development.",
-    image: "/assets/img/portfolio-preview.png", 
+    image: "../../assets/seo/seo-homepage.png", 
   },
 };
 
