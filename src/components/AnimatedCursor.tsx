@@ -54,4 +54,4 @@ export default function AnimatedCursor() {
 
 // Coloque esta linha no topo do arquivo
 // src/components/AnimatedCursor.tsx
-// src/components/AnimatedCursor.tsx
+
