@@ -1,3 +1,4 @@
+// src/components/ClientSideScript.tsx
 "use client";
 
 import Script from "next/script";
@@ -9,7 +10,7 @@ export default function ClientSideScript() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (pathname) {
+    if (window.gtag && pathname) {
       gtag.pageview(pathname);
     }
   }, [pathname]);
