@@ -1,6 +1,7 @@
 import TeamplateHome from "@/components/TemplateHome";
 import Image from "next/image";
-
+import "./globals.css"; // Certifique-se de que o caminho está correto
+import "../../styles/globals.css"; // Certifique-se de que o caminho está correto
 
 export const metadata = {
   title: "Wellington Alexander - UX/UI Designer & Digital Experience Expert",
