@@ -3,14 +3,13 @@
 import Script from "next/script";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import * as gtag from "@/lib/gtag"; // Certifique-se de que ele aponte para `gtag.ts`
-
+import * as gtag from "@/lib/gtag";
 
 export default function ClientSideScript() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (pathname) {
+    if (typeof window.gtag === "function" && pathname) {
       gtag.pageview(pathname);
     }
   }, [pathname]);
@@ -26,7 +25,7 @@ export default function ClientSideScript() {
           <Script id="google-analytics" strategy="afterInteractive">
             {`
               window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
+              function gtag(){window.dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', '${process.env.NEXT_PUBLIC_GA_TRACKING_ID}', {
                 page_path: window.location.pathname,
