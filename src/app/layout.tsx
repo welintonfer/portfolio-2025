@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import AnimatedCursor from "@/components/AnimatedCursor";
+import ClientAnimatedCursor from "@/components/ClientAnimatedCursor";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {/* Renderiza o cursor animado apenas no client-side. */}
-        <AnimatedCursor />
+        <ClientAnimatedCursor />
         {children}
       </body>
     </html>
