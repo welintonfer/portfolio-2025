@@ -60,7 +60,9 @@
 
 
 // app/layout.tsx
-import "./globals.css";
+// app/layout.tsx
+
+import "./globals.css"; // Certifique-se de que este caminho está correto e o arquivo existe
 import type { Metadata } from "next";
 import ClientAnimatedCursor from "@/components/ClientAnimatedCursor";
 import Script from "next/script";
@@ -80,7 +82,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Script do Google Analytics */}
+        {/* Inclua o script do Google Analytics */}
         {GA_TRACKING_ID && (
           <>
             <Script
@@ -100,11 +102,10 @@ export default function RootLayout({
           </>
         )}
       </head>
-      <body>
+      <body className="antialiased"> {/* Adicione aqui a classe desejada */}
         <ClientAnimatedCursor />
         {children}
       </body>
     </html>
   );
 }
-
