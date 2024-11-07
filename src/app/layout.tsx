@@ -35,6 +35,7 @@ export default function RootLayout({
       <head>
         <title>{metadata.title as string}</title>
         <meta name="description" content={metadata.description as string} />
+        <link rel="icon" href="/favicon.ico" />
 
         {GA_TRACKING_ID && (
           <>
