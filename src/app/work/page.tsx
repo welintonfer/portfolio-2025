@@ -14,6 +14,7 @@ import eirCover from "../../assets/img/eir/cover-casestudy-eir.png";
 import helenCover from "../../assets/img/helen/helen-turkington-cover.png";
 // @ts-ignore
 import habitusCover from "../../assets/video/habitushealth.webm";
+import lisneyCover from "../../assets/img/lisney/lisney@2x.png";
 
 export default function Page() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -75,6 +76,13 @@ export default function Page() {
       categories: ["Information Architecture", "UX Design"],
       media: { type: "image", src: helenCover },
     },
+    {
+      id: 5,
+      href: "/work/lisney",
+      bgClass: "theme__bg-vivid-red-tangelo",
+      categories: ["Case Study", "UI Design", "UX Design", "UX Research", "Content Strategy", "Information Architecture", "UX Design"],
+      media: { type: "image", src: lisneyCover },
+    },    
   ];
 
   
