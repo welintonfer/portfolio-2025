@@ -31,7 +31,7 @@ export default function RootLayout({
   }, [pathname]);
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <title>{metadata.title as string}</title>
         <meta name="description" content={metadata.description as string} />
