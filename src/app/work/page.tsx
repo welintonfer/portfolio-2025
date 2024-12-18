@@ -15,6 +15,7 @@ import helenCover from "../../assets/img/helen/helen-turkington-cover.png";
 // @ts-ignore
 import habitusCover from "../../assets/video/habitushealth.webm";
 import lisneyCover from "../../assets/img/lisney/lisney@2x.png";
+// import lisneyCover from "../../assets/img/lisney/lisney@2x.png";
 
 export default function Page() {
   const [isDarkMode, setIsDarkMode] = useState(false);
