@@ -12,10 +12,10 @@ import Image, { StaticImageData } from "next/image";
 import europcarCover from "../../assets/video/animated-mockup-i-phone-14-pro.webm";
 import eirCover from "../../assets/img/eir/cover-casestudy-eir.png";
 import helenCover from "../../assets/img/helen/helen-turkington-cover.png";
+import caroCover from "../../assets/img/caro/caro-cover.png";
 // @ts-ignore
 import habitusCover from "../../assets/video/habitushealth.webm";
 import lisneyCover from "../../assets/img/lisney/lisney@2x.png";
-// import lisneyCover from "../../assets/img/lisney/lisney@2x.png";
 
 export default function Page() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -83,7 +83,14 @@ export default function Page() {
       bgClass: "theme__bg-vivid-red-tangelo",
       categories: ["Case Study", "UI Design", "UX Design", "UX Research", "Content Strategy", "Information Architecture", "UX Design"],
       media: { type: "image", src: lisneyCover },
-    },    
+    },   
+    {
+      id: 6,
+      href: "/work/caro",
+      bgClass: "theme__bg-soap",
+      categories: ["Case Study", "UI Design", "UX Research", "Interaction Design", "Service Design"],
+      media: { type: "image", src: caroCover },
+    },   
   ];
 
   
