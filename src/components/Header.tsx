@@ -43,7 +43,7 @@ export default function Header({
           <div className="flex flex-col">
               <Link href="/" className="hover:scale-105 transition-transform duration-200">
                 <span className="isolate-color text-xl font-bold">Wellington Alexander</span> <br />
-                <span className="text-sm isolate-color">Dublin, Ireland</span>
+                <span className="text-sm isolate-color">Lisbon, Portugal</span>
               </Link>
           </div>
 
