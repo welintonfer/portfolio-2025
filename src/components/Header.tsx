@@ -88,7 +88,7 @@ export default function Header({
 
           <div className="hero-isolated py-12 text-center flex flex-col justify-center items-center">
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-tight text-gray-950 max-w-6xl">
-              Experience Designer currently based in Ireland.
+              Experience Designer currently based in Portugal.
             </h1>
             <p className="mt-8 max-w-6xl mx-auto text-base sm:text-base md:text-lg lg:text-xl xl:text-xl text-gray-600">
               I craft engaging and innovative experiences that connect brands with their customers. Leveraging my
